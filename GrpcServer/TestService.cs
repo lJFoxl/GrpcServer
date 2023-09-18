@@ -9,7 +9,7 @@ public class TestService : TestGrpcService.TestGrpcServiceBase
         Console.WriteLine("Формируем ответ по GRPC от сервиса");
         return await Task.FromResult<TestCommand>(new TestCommand()
         {
-            Command = "Отличная Commanda",
+            Command = "Отличная Commanda Прям проксированная",
             IsActive = true
         });
     }

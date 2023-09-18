@@ -13,8 +13,11 @@ var app =builder.Build();
 app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGrpcService<TestService>();
     endpoints.MapGrpcReflectionService();
+    endpoints.MapGrpcService<TestService>();
+    endpoints.MapGrpcService<TestService2>();
+    endpoints.MapGrpcService<TestService3>();
+   
 });
 app.UseHttpsRedirection();
 app.Run();

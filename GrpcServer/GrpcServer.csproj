@@ -10,6 +10,8 @@
   <ItemGroup>
     <None Remove="appsettings.json" />
     <None Remove="proto\test.proto" />
+    <None Remove="proto\Test2.proto" />
+    <None Remove="proto\Test3.proto" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="proto\Test3.proto" />
+    <Protobuf Include="proto\Test2.proto" />
     <Protobuf Include="proto\test.proto" />
   </ItemGroup>
 
